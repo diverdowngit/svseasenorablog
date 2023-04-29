@@ -1,52 +1,31 @@
 import React, { Component } from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import moment from "moment";
-// import { DiscussionEmbed } from "disqus-react";
-
 import Layout from "../components/layout";
 import Seo from "../components/seo";
- import Share from "../components/share";
 
 export default class blogPost extends Component {
   render() {
     const data = this.props.data.contentfulBlogs;
-    // const disqusShortname = "RohitGupta";
-    // const disqusConfig = {
-    //   identifier: data.id,
-    //   title: data.title
-    // };
 
-    const siteurl = this.props.data.contentfulSiteInformation.siteUrl + "/";
-    const twitterhandle = this.props.data.contentfulSiteInformation
-      .twitterHandle;
-    const socialConfigss = {
-      site: {
-        siteMetadata: { siteurl, twitterhandle }
-      },
-      title: data.title,
-      slug: data.slug
-    };
+    // Find the previous and next blog posts
+    const allPosts = this.props.data.allContentfulBlogs.edges;
+    const currentIndex = allPosts.findIndex((post) => post.node.id === data.id);
+    const prevPost = allPosts[currentIndex - 1]?.node;
+    const nextPost = allPosts[currentIndex + 1]?.node;
 
     return (
       <Layout>
-        <Seo
-          title={data.title}
-          keywords={[
-            `SV Sea Senora`
-            ,
-            `${data.title}`
-          ]}
-        />
+        <Seo title={data.title} keywords={[`SV Sea Senora`, `${data.title}`]} />
         <div className="site-container blog-post">
           <div className="container">
             {data.featureImage ? (
               <GatsbyImage
-              className="feature-img"
-              image={data.featureImage.gatsbyImageData}
-alt=""
-               />
-             
+                className="feature-img"
+                image={data.featureImage.gatsbyImageData}
+                alt=""
+              />
             ) : (
               <div className="no-image"></div>
             )}
@@ -59,23 +38,24 @@ alt=""
               </span>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: data.description.childMarkdownRemark.html
+                  __html: data.description.childMarkdownRemark.html,
                 }}
               />
             </div>
-             <Share
-              socialConfig={{
-                ...socialConfigss.site.siteMetadata.twitterhandletitle,
-                config: {
-                  url: `${siteurl}${socialConfigss.slug}`,
-                  title: `${socialConfigss.title}`
-                }
-              }}
-            /> 
-            {/* <DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
-            /> */}
+
+            <div className="prev-next-links">
+              {prevPost && (
+                <Link to={`/${prevPost.slug}`} className="prev-link">
+                  <span>&lt;</span> {prevPost.title}
+                </Link>
+              )}
+
+              {nextPost && (
+                <Link to={`/${nextPost.slug}`} className="next-link">
+                  {nextPost.title} <span>&gt;</span>
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </Layout>
@@ -90,8 +70,11 @@ export const pageQuery = graphql`
       title
       slug
       featureImage {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: [AUTO,
-WEBP])
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: [AUTO, WEBP]
+        )
       }
       description {
         childMarkdownRemark {
@@ -99,6 +82,16 @@ WEBP])
         }
       }
       createdAt
+    }
+    allContentfulBlogs(sort: { createdAt: DESC }) {
+      edges {
+        node {
+          id
+          title
+          slug
+          createdAt
+        }
+      }
     }
     contentfulSiteInformation {
       siteUrl

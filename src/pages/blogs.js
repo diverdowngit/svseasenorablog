@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { graphql } from "gatsby";
+import { graphql,Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
 import moment from "moment";
-import IMG from "../images/summer-computer.jpg";
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { overlay, adminText } from "../css/Keepafloat.module.css";
@@ -18,7 +17,7 @@ export default class Blogs extends Component {
         />
         <div className="site-container blogs-page" id="Blogs">
           <div className={overlay}>
-            <img src={IMG} width="100%" alt="small island" />
+            <StaticImage src="../images/summer-computer.jpg" alt="summer-computer" />
             <h2 className={adminText}>Enjoy Your Reading </h2>
           </div>
           <div className="container">
