@@ -2,11 +2,11 @@
   padding: 14rem 1.6rem;
   /* padding-bottom: 0; */
   color: #333;
-  
+
 }
 
 .wrapper {
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,10 +16,11 @@
   font-size: 4rem;
   font-weight: 400;
 }
-.secondHeading{
+
+.secondHeading {
   font-size: 1.5rem;
   font-weight: 300;
-  
+
 }
 
 .storyWrapper {
@@ -30,21 +31,22 @@
   margin-top: 6rem;
   text-align: center;
   max-width: 60%;
-  
+
 }
 
 .story {
   letter-spacing: 1.5px;
   line-height: 36px;
 }
-@media (max-width: 600px){
+
+@media (max-width: 600px) {
 
   .story {
     letter-spacing: 1px;
-    
-  }
-
-
-
 
   }
+
+
+
+
+}

@@ -1,16 +1,16 @@
 .container {
   padding: 1.6rem;
-   /* background-color: #003B73;  */
+
   color: whitesmoke;
   background-image: url("../images/water.webp");
-  /* opacity: 100%; */
+
 }
 
 .wrapper {
- 
+
   display: flex;
   justify-content: space-between;
- 
+
 }
 
 .brand {
@@ -26,11 +26,13 @@
 .logo {
   font-size: 3rem;
 }
-.logo img{
+
+.logo img {
   position: relative;
   width: 120px;
   height: 100px;
 }
+
 .socialTitle {
   font-size: 3rem;
   text-transform: capitalize;
@@ -41,48 +43,51 @@
   gap: 2rem;
   margin: 1rem 0;
 }
+
 .social a {
   color: #fff;
 }
-.social a:hover{
+
+.social a:hover {
   color: #1e90ff;
 }
+
 .social svg {
   height: 24px;
   width: 24px;
 }
 
-.copyRights {
-  margin-top: 2rem;
-  font-size: 1.6rem;
-}
 
-.socials{
+
+.socials {
   margin: 0;
 }
 
-@media (max-width: 600px){
-  .container{
+@media (max-width: 600px) {
+  .container {
     text-align: center;
   }
-  .wrapper{
+
+  .wrapper {
     flex-direction: column;
     justify-content: center;
   }
 
-  .socialTitle{
+  .socialTitle {
     visibility: hidden;
   }
-  .social{
+
+  .social {
     justify-content: center;
   }
-  .brand{
-    
+
+  .brand {
+
     width: 80%;
     margin: auto;
   }
-  
-  .logo{
+
+  .logo {
     text-align: center;
   }
 }

@@ -2,8 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai"
 import { FaFacebookF } from "react-icons/fa"
-import Logo from "../images/Logowhite.webp"
-
+import { StaticImage } from "gatsby-plugin-image"
 import {
   container,
   brand,
@@ -22,7 +21,7 @@ const Footer = () => {
         <div className={brand}>
           <div className={logo}>
             <Link to="/">
-              <img src={Logo} alt="logo of sea senora" />
+              <StaticImage src="../images/Logowhite.webp" alt="logo of sea senora" />
             </Link>
           </div>
           <div className={brandDescription}>
