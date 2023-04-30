@@ -1,7 +1,7 @@
 .imgbox {
   box-sizing: border-box; /* fixed typo */
   margin: 0.5rem;
-  height: 37rem;
+  height: auto;
   max-width: 100%; 
   overflow: hidden;
   display: flex;
@@ -13,8 +13,8 @@
 .caption {
   
   position: absolute;
-  top: 40%;
-  left: 15%;
+  top: 1rem;
+  left:1rem;
   color: white;
   opacity: 0.0;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -101,7 +101,7 @@ color: #000000;
 
   .caption {
     top: 20%; /* changed from 40% */
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
@@ -118,7 +118,7 @@ color: #000000;
 
   .caption {
     top: 20%; /* changed from 40% */
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
