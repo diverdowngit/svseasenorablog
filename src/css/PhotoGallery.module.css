@@ -64,8 +64,8 @@
 
   .caption {
     top: 10%;
-    left: 20%;
-    font-size: 6rem;
+    left: 10%;
+    font-size: 4rem;
   }
 }
 
@@ -78,8 +78,8 @@
 
   .caption {
     top: 10%;
-    left: 20%;
-    font-size: 9rem;
+    left: 10%;
+    font-size: 6rem;
   }
 }
 
@@ -91,9 +91,9 @@
   }
 
   .caption {
-    font-size: 10rem;
+    font-size: 9rem;
     left: 10%;
-    top: 20%;
+    top: 10%;
     transform: translateX(-50%) translateY(-50%);
   }
 }
