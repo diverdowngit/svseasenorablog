@@ -88,23 +88,20 @@ p {
   text-align: justify;
   font-family: 'luminari', sans-serif;
 }
-@media (max-width: 600px){
-  .bookingwrapper{
+@media (max-width: 600px) {
+  .bookingwrapper {
     flex-direction: column;
   }
 
-  .buttontext{
-    font-size: .2rem;
-    padding: 0px 0px 0px 0px
+  .buttontext {
+    font-size: 0.2rem;
+    padding: 0px 0px 0px 0px;
   }
 
   .staywrapper a {
-    padding: 1px 1px 1px 1px
+    padding: 1px 1px 1px 1px;
   }
-  .adminText {
-    font-size: clamp(0.8rem, 6vw, 1rem);
-    gap: 1rem;
-  }
+
   .overlay h2 {
     position: absolute;
     top: 70%;
@@ -112,7 +109,16 @@ p {
     transform: translate(-50%, -50%);
     z-index: 999;
     color: white;
-    font-size:2vh;
+    font-size: 2vh;
   }
-  
+
+  .adminText {
+    font-size: clamp(1rem, 6vw, 1.5rem); /* Adjust the min and max values based on your preference */
+    gap: 1rem;
+    text-align: center; /* Add this property to center the content */
+  }
+
+  .aboutCards {
+    font-size: 1rem; /* Reduce the font size of the cards as well */
+  }
 }

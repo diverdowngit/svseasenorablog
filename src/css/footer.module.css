@@ -10,7 +10,7 @@
 
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
 
 .brand {
@@ -30,18 +30,19 @@
 .logo img {
   position: relative;
   width: auto;
-  height: 100px;
+  height: 9rem;
 }
 
 .socialTitle {
-  font-size: 3rem;
+  font-size: 1rem;
   text-transform: capitalize;
+  margin-right: 2rem;
 }
 
 .social {
   display: flex;
-  gap: 2rem;
-  margin: 1rem 0;
+  gap: .7rem;
+  margin:  0;
 }
 
 .social a {
@@ -94,5 +95,15 @@
     position: relative;
     width: auto;
     height: 100px;
+  }
+}
+.copyright {
+  padding-top: 1rem;
+  font-size: .5rem;
+}
+@media (min-width: 768px) {
+  .copyright {
+ 
+    font-size: .5rem;
   }
 }

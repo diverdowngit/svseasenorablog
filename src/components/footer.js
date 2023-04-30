@@ -12,6 +12,7 @@ import {
   socials,
   socialTitle,
   social,
+  copyright,
 } from "../css/footer.module.css"
 import Seo from "./seo"
 const Footer = () => {
@@ -68,7 +69,7 @@ const Footer = () => {
                   <FaPatreon />
                 </a>
           </div>
-          <div>Copyright © 2022 - {new Date().getFullYear()} SV Sea Senora</div>
+          <div className={copyright}>Copyright © 2022 - {new Date().getFullYear()} SV Sea Senora</div>
         </div>
       </div>
     </div>

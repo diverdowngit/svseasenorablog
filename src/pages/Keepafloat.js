@@ -2,7 +2,6 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Patron from "../images/patreon-icon.png";
-// import Img from "../images/sailboatonrocks.png";
 import { StaticImage } from "gatsby-plugin-image"
 import {
   container,
@@ -17,10 +16,10 @@ import {
 const Keepafloat = () => {
   return (
     <Layout>
-      <div className={overlay}> <StaticImage src="../images/sailboatonrocks.png" alt="sailboat on rocks" />
-        {/* <img src={Img} width="100%" alt="small island" /> */}
+      <div className={overlay}>
+         <StaticImage src="../images/sailboatonrocks.png" alt="sailboat on rocks" />
         <h2 className={adminText}>
-          Our Passion For Travel Is The Foundation Of Sv Sea Senora.{" "}
+          Our Passion For Travel Is The Foundation Of Sv Sea Senora.
         </h2>
       </div>
       <div className={container}>
