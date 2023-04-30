@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { graphql, Link } from "gatsby";
+import { graphql,Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import moment from "moment";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+
 
 export default class blogPost extends Component {
   render() {
@@ -11,21 +12,30 @@ export default class blogPost extends Component {
 
     // Find the previous and next blog posts
     const allPosts = this.props.data.allContentfulBlogs.edges;
-    const currentIndex = allPosts.findIndex((post) => post.node.id === data.id);
+    const currentIndex = allPosts.findIndex(post => post.node.id === data.id);
     const prevPost = allPosts[currentIndex - 1]?.node;
     const nextPost = allPosts[currentIndex + 1]?.node;
+   
 
     return (
       <Layout>
-        <Seo title={data.title} keywords={[`SV Sea Senora`, `${data.title}`]} />
+        <Seo
+          title={data.title}
+          keywords={[
+            `SV Sea Senora`
+            ,
+            `${data.title}`
+          ]}
+        />
         <div className="site-container blog-post">
           <div className="container">
             {data.featureImage ? (
               <GatsbyImage
-                className="feature-img"
-                image={data.featureImage.gatsbyImageData}
-                alt=""
-              />
+              className="feature-img"
+              image={data.featureImage.gatsbyImageData}
+alt=""
+               />
+             
             ) : (
               <div className="no-image"></div>
             )}
@@ -38,12 +48,12 @@ export default class blogPost extends Component {
               </span>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: data.description.childMarkdownRemark.html,
+                  __html: data.description.childMarkdownRemark.html
                 }}
               />
             </div>
-
-            <div className="prev-next-links">
+              
+              <div className="prev-next-links">
               {prevPost && (
                 <Link to={`/${prevPost.slug}`} className="prev-link">
                   <span>&lt;</span> {prevPost.title}
@@ -64,38 +74,35 @@ export default class blogPost extends Component {
 }
 
 export const pageQuery = graphql`
-  query SinglePostQuery($slug: String!) {
-    contentfulBlogs(slug: { eq: $slug }) {
-      id
-      title
-      slug
-      featureImage {
-        gatsbyImageData(
-          layout: FULL_WIDTH
-          placeholder: BLURRED
-          formats: [AUTO, WEBP]
-        )
-      }
-      description {
-        childMarkdownRemark {
-          html
-        }
-      }
-      createdAt
+query SinglePostQuery($slug: String!) {
+  contentfulBlogs(slug: {eq: $slug}) {
+    id
+    title
+    slug
+    featureImage {
+      gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED,
+formats: [AUTO, WEBP])
     }
-    allContentfulBlogs(sort: { createdAt: DESC }) {
-      edges {
-        node {
-          id
-          title
-          slug
-          createdAt
-        }
+    description {
+      childMarkdownRemark {
+        html
       }
     }
-    contentfulSiteInformation {
-      siteUrl
-      twitterHandle
+    createdAt
+  }
+  allContentfulBlogs(sort: {createdAt: DESC}) {
+    edges {
+      node {
+        id
+        title
+        slug
+        createdAt
+      }
     }
   }
+  contentfulSiteInformation {
+    siteUrl
+    twitterHandle
+  }
+}
 `;

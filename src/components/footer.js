@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai"
-import { FaFacebookF } from "react-icons/fa"
+import { FaFacebookF,FaPatreon } from "react-icons/fa"
 import { StaticImage } from "gatsby-plugin-image"
 import {
   container,
@@ -58,7 +58,15 @@ const Footer = () => {
               aria-label="Our Facebook Page"
             >
               <FaFacebookF />
-            </a>
+            </a> <a
+                  className=" FaPatreon"
+                  href="https://www.patreon.com/user?u=84347902"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="patreon"
+                >
+                  <FaPatreon />
+                </a>
           </div>
           <div>Copyright © 2022 - {new Date().getFullYear()} SV Sea Senora</div>
         </div>
