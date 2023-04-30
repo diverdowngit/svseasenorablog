@@ -5,6 +5,7 @@ import {
   imgbox,
   transparentbox,
   caption,
+  close,
 } from "../css/PhotoGallery.module.css";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -99,6 +100,15 @@ export default class PhotosPage extends Component {
                           }
                         </h3>
                       </div>
+                      <i // close X element
+                      className={`${close} fas fa-times`}
+                      role="presentation"
+                      onClick={() => {
+                        this.setState({
+                          activePopup: false,
+                        });
+                      }}
+                    ></i>
                     </div>
                   </div>
                 </div>

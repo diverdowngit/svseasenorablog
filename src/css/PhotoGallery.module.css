@@ -56,7 +56,9 @@
 .caption > p:nth-child(2) {
   font-size: 0.8rem;
 }
-
+.close {
+color: #000000;
+}
 /* Media query for screens smaller than or equal to 480px */
 @media (max-width: 480px) {
   .imgbox {
