@@ -1,7 +1,6 @@
-
 import React from 'react'
 import Layout from '../components/layout'
-import Img from '../images/boatbroke.jpg'
+import Img from '../images/boatbroke.webp'
 const NotFoundPage = () => (
   <Layout>
      <img src={Img} width="100%" alt='sunken boat' />

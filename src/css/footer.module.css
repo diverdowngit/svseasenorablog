@@ -42,7 +42,7 @@
 .social {
   display: flex;
   gap: .7rem;
-  margin:  0;
+  margin: 0;
 }
 
 .social a {
@@ -91,19 +91,22 @@
   .logo {
     text-align: center;
   }
+
   .logo img {
     position: relative;
     width: auto;
     height: 100px;
   }
 }
+
 .copyright {
   padding-top: 1rem;
   font-size: .5rem;
 }
+
 @media (min-width: 768px) {
   .copyright {
- 
+
     font-size: .5rem;
   }
 }

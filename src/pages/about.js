@@ -9,7 +9,6 @@ import {
   alignImages2,
   overlay,
 } from "../css/About.module.css";
-
 import Youtube from "../images/youtube-logo.png";
 import Seo from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image"
