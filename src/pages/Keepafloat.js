@@ -17,7 +17,8 @@ const Keepafloat = () => {
   return (
     <Layout>
       <div className={overlay}>
-         <StaticImage src="../images/sailboatonrocks.png" alt="sailboat on rocks" />
+         <StaticImage src="../images/sailboatonrocks.png" placeholder="blurred"
+            layout="fullWidth" alt="sailboat on rocks" />
         <h2 className={adminText}>
           Our Passion For Travel Is The Foundation Of Sv Sea Senora.
         </h2>

@@ -22,9 +22,10 @@ const AboutPage = () => {
           keywords={[`About us`,`Sailing`, `Liveaboard`, `Cruiser`]}
         /> 
       <div className={overlay}>
-      <StaticImage src="../images/aboutTravel1.jpg" alt="About travel " />
+      <StaticImage src="../images/aboutTravel1.jpg" placeholder="blurred"
+            layout="fullWidth" alt="About travel " />
     
-      <h2 className={adminText}>Our Passion For Travel Is The Foundation Of Sv Sea Senora. </h2>
+      <h2 className={adminText}>Our Passion For Travel Is The Foundation Of Sv Sea Senora </h2>
       </div>
       <div className={container}>
         <div>
