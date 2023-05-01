@@ -28,7 +28,7 @@
   transform: translate(-50%, -50%);
   z-index: 999;
   color: white;
-  font-size:3vh;
+  font-size: 5v;
 }
 .bookingwrapper{ 
     display: flex;
@@ -80,10 +80,10 @@ p {
  text-align: justify;
 }
 .adminText {
-  font-size: clamp(0.8rem, 6vw, 1rem);   
+  font-size: clamp(1.2rem, 6vw, 0.5rem);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
   align-items: center;
   text-align: justify;
   font-family: 'luminari', sans-serif;
@@ -123,3 +123,11 @@ p {
     font-size: 1rem; /* Reduce the font size of the cards as well */
   }
 }
+  @media screen and (max-width: 768px){
+    .adminText {
+      font-size: clamp(0.8rem, 6vw, 1rem);
+      gap: 1rem;
+    }
+
+
+  }
