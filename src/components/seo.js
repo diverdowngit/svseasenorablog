@@ -27,6 +27,9 @@ function SEO({ description, lang, meta, keywords, title }) {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={twitterHandle} />
       <meta name="twitter:title" content={title} />
+      <meta charSet="utf-8"/>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
       <meta name="twitter:description" content={siteDescription} />
       {keywords.length > 0 ? (
         <meta name="keywords" content={keywords.join(`, `)} />
