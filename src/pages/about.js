@@ -9,7 +9,7 @@ import {
   alignImages2,
   overlay,
 } from "../css/About.module.css";
-import Youtube from "../images/youtube-logo.png";
+import Youtube from "../images/youtube-logo.webp";
 import Seo from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -21,7 +21,7 @@ const AboutPage = () => {
           keywords={[`About us`,`Sailing`, `Liveaboard`, `Cruiser`]}
         /> 
       <div className={overlay}>
-      <StaticImage src="../images/aboutTravel1.jpg" placeholder="blurred"
+      <StaticImage src="../images/aboutTravel1.webp" placeholder="blurred"
             layout="fullWidth" alt="About travel " />
     
       <h2 className={adminText}>Our Passion For Travel Is The Foundation Of Sv Sea Senora </h2>

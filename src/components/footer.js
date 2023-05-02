@@ -22,7 +22,7 @@ const Footer = () => {
         <div className={brand}>
           <div className={logo}>
             <Link to="/">
-              <StaticImage src="../images/Logowhite.webp" alt="logo of sea senora" />
+              <StaticImage src="../images/Logowhite.png" alt="logo of sea senora" />
             </Link>
           </div>
           <div className={brandDescription}>

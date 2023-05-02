@@ -18,7 +18,7 @@ export default class Blogs extends Component {
         <div className="site-container blogs-page" id="Blogs">
           <div className={overlay}>
             <StaticImage
-              src="../images/summer-computer.jpg"
+              src="../images/summer-computer.webp"
               placeholder="blurred"
               layout="fullWidth"
               alt="computer on beach"

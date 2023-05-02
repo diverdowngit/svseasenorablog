@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import Patron from "../images/patreon-icon.png";
+import Patron from "../images/patreon-icon.webp";
 import { StaticImage } from "gatsby-plugin-image"
 import {
   container,
@@ -17,7 +17,7 @@ const Keepafloat = () => {
   return (
     <Layout>
       <div className={overlay}>
-         <StaticImage src="../images/sailboatonrocks.png" placeholder="blurred"
+         <StaticImage src="../images/sailboatonrocks.webp" placeholder="blurred"
             layout="fullWidth" alt="sailboat on rocks" />
         <h2 className={adminText}>
           Our Passion For Travel Is The Foundation Of Sv Sea Senora.
