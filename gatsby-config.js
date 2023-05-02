@@ -9,7 +9,7 @@ const { spaceId, accessToken } = process.env;
 module.exports = {
   siteMetadata: {
     title: `svseasenorablog`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://svseasenora-blog.netlify.app/`
   },
   plugins: [ {
       resolve: `gatsby-plugin-google-gtag`,
