@@ -22,6 +22,7 @@ const IndexPage = ({ data }) => (
     /> 
     <Banner data={data.contentfulAboutMe}></Banner>
     <Ewv />
+    
     {/*  {data.contentfulSiteInformation.menus
       .filter(item => item === "About")
       .map(t => {

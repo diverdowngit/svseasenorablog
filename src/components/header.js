@@ -107,6 +107,9 @@ export default class Header extends Component {
                     })} <li key="Keepafloat">
                     <Link to={`/Keepafloat`}>Keepafloat</Link>
                   </li>
+                  <li key="Merch">
+                    <Link to={`/Merch`}>Merch</Link>
+                  </li>
                   {data.menus
                     .filter(item => item === "Contact")
                     .map(t => {
@@ -161,6 +164,9 @@ export default class Header extends Component {
                     })}
                     <li key="Keepafloat">
                     <Link to={`/Keepafloat`}>Keepafloat</Link>
+                  </li>
+                  <li key="Merch">
+                    <Link to={`/Merch`}>Merch</Link>
                   </li>
                 </ul>
               </div>
