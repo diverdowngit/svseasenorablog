@@ -20,7 +20,7 @@ const Keepafloat = () => {
          <StaticImage src="../images/sailboatonrocks.webp" placeholder="blurred"
             layout="fullWidth" alt="sailboat on rocks" />
         <h2 className={adminText}>
-          Our Passion For Travel Is The Foundation Of Sv Sea Senora.
+          Our Passion For Travel Is The Foundation Of  Let's Sail Andiamo .
         </h2>
       </div>
       <div className={container}>
@@ -28,7 +28,7 @@ const Keepafloat = () => {
           {" "}
           <img
             src={Patron}
-            href="https://www.patreon.com/user?u=84347902"
+            href="https://www.patreon.com/LetsSailAndiamo"
             alt="patron"
           />
         </div>
@@ -45,13 +45,13 @@ const Keepafloat = () => {
                 advance for your support!
               </p>
               <a
-                href="https://www.patreon.com/user?u=84347902"
+                href="https://www.patreon.com/LetsSailAndiamo"
                 alt="patron"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <button
-                  href="https://www.patreon.com/user?u=84347902"
+                  href="https://www.patreon.com/LetsSailAndiamo"
                   alt="patron"
                 >
                   Patreon

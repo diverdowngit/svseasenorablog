@@ -22,12 +22,12 @@ const Footer = () => {
         <div className={brand}>
           <div className={logo}>
             <Link to="/">
-              <StaticImage src="../images/Logowhite.png" alt="logo of sea senora" />
+              <StaticImage src="../images/Logowhite.png" alt="logo of Let's Sail Andiamo" />
             </Link>
           </div>
           <div className={brandDescription}>
             The website ends here, but your journey to the beautiful
-            destinations begins with Sv Sea Senora. Explore with us.
+            destinations begins with Let's Sail Andiamo. Explore with us.
           </div>
         </div>
         <div className={socials}>
@@ -52,7 +52,7 @@ const Footer = () => {
               <AiOutlineYoutube />
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=100085674495009"
+              href="https://www.facebook.com/letssailandiamo/"
               target="_blank"
               rel="noopener noreferrer"
               alt="facebook"
@@ -69,7 +69,7 @@ const Footer = () => {
                   <FaPatreon />
                 </a>
           </div>
-          <div className={copyright}>Copyright © 2022 - {new Date().getFullYear()} SV Sea Senora</div>
+          <div className={copyright}>Copyright © 2022 - {new Date().getFullYear()} Let's Sail Andiamo</div>
         </div>
       </div>
     </div>

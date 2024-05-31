@@ -24,22 +24,21 @@ const AboutPage = () => {
       <StaticImage src="../images/aboutTravel1.webp" placeholder="blurred"
             layout="fullWidth" alt="About travel " />
     
-      <h2 className={adminText}>Our Passion For Travel Is The Foundation Of Sv Sea Senora </h2>
+      <h2 className={adminText}>Our Passion For Travel Is The Foundation Of Let's Sail Andiamo </h2>
       </div>
       <div className={container}>
         <div>
           <h2 className={adminTravel}>About Us</h2>
           <div className={adminText}>
             Hello We Are Fred, Sandra and Maya. We wanted to share our
-            exdiveriences with others all across the world, so we started Sv Sea
-            Senora. to increase the rewards of well-known sites and the
+            exdiveriences with others all across the world, so we started Let's Sail Andiamo. to increase the rewards of well-known sites and the
             accessibility of off-the-beaten-path locations.
           </div>
           <p className={adminText}>
             Both textual and visual storytelling are our passions. That's why we
             made the decision to start a simple
             <a
-              href="https://www.youtube.com/@svseasenora"
+              href="https://www.youtube.com/@LetsSailAndiamo"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -81,12 +80,12 @@ const AboutPage = () => {
         <div className={adminText}>
           Thank you for visiting
           <a
-            href="https://www.youtube.com/@svseasenora"
+            href="https://www.youtube.com/@LetsSailAndiamo"
             target="_blank"
             rel="noopener noreferrer"
-            alt="https://www.youtube.com/@svseasenora"
+            alt="https://www.youtube.com/@LetsSailAndiamo"
           >
-            SV Sea Senora
+           Lets Sail Andiamo
           </a>
           We hope you enjoy your sailing journey with your loved ones and join
           our community of sailing families!

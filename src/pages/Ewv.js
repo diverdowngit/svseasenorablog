@@ -16,7 +16,7 @@ export default function Ewv() {
         <div className={secondHeading}>
           {" "}
           <a
-            href="https://www.youtube.com/@svseasenora"
+            href="https://www.youtube.com/@LetsSailAndiamo"
             textDecoration="none"
             target="_blank"
             rel="noopener noreferrer"

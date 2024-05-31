@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => (
   <Layout header="home">
      <Seo
       title={data.contentfulAboutMe.designation}
-      keywords={[`Sailing`, `Liveaboard`, `Cruiser`,`Sea Senora`]}
+      keywords={[`Sailing`, `Liveaboard`, `Cruiser`,`Lets Sail Andiamo`]}
     /> 
     <Banner data={data.contentfulAboutMe}></Banner>
     <Ewv />

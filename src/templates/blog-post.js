@@ -22,7 +22,7 @@ export default class blogPost extends Component {
         <Seo
           title={data.title}
           keywords={[
-            `SV Sea Senora`
+            `Let's Sail Andiamo`
             ,
             `${data.title}`
           ]}

@@ -36,7 +36,7 @@ const Merch = () => {
         </h2>
       </div>
      <div id="myShop" >
-    <a href="https://sv-sea-senora.myspreadshop.com" >sv sea senora</a>
+    <a href="https://lets-sail-andiamo.myspreadshop.com">Let's Sail Andiamo</a>
 </div>
     </Layout>
   );
