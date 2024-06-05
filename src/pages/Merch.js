@@ -10,7 +10,7 @@ const Merch = () => {
     const spreadShopConfig = {
       shopName: 'sv-sea-senora',
       locale: 'us_US',
-      prefix: 'https://sv-sea-senora.myspreadshop.com',
+      prefix: 'https://lets-sail-andiamo.myspreadshop.com',
       baseId: 'myShop',
       usePushState: false,
       updateMetadata: true,
@@ -18,7 +18,7 @@ const Merch = () => {
 
     // Insert the Spreadshop integration script
     const script = document.createElement('script');
-    script.src = 'https://sv-sea-senora.myspreadshop.com/js/shopclient.nocache.js';
+    script.src = 'https://lets-sail-andiamo.myspreadshop.com/js/shopclient.nocache.js';
     script.async = true;
     document.body.appendChild(script);
 
