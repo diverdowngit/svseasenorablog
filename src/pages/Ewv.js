@@ -15,14 +15,14 @@ export default function Ewv() {
         <div className={exploreHeading}>Sail with Us</div>
         <div className={secondHeading}>
           {" "}
-          <a
+          {/* <a
             href="https://www.youtube.com/@LetsSailAndiamo"
             textDecoration="none"
             target="_blank"
             rel="noopener noreferrer"
           >
             A Travel Site
-          </a>
+          </a> */}
         </div>
         <div className={storyWrapper}>
           <div className={story}>
@@ -37,7 +37,7 @@ export default function Ewv() {
           <div className={story}>
             We travel to enquire, hear stories, and be awestruck by incredible
             scenery. To be humbled by the history of yesterday, and excited by
-            the possibilities of tomorrow. Our videos feature breathtaking
+            the possibilities of tomorrow. Our photos feature breathtaking
             footage of some of the most beautiful sailing locations around the
             world. Whether you're a seasoned sailor, just getting started or
             just want to enjoy, our content is designed to inspire and educate.

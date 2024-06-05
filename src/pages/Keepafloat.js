@@ -68,7 +68,7 @@ const Keepafloat = () => {
                 advance for your support!{" "}
               </p>
               <a
-                href="https://www.paypal.com"
+                href="https://www.paypal.com/pools/c/957aJlX1is"
                 alt="Paypal"
                 target="_blank"
                 rel="noopener noreferrer "

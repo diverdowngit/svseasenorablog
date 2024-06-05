@@ -36,15 +36,15 @@ const AboutPage = () => {
           </div>
           <p className={adminText}>
             Both textual and visual storytelling are our passions. That's why we
-            made the decision to start a simple
-            <a
+            made the decision to start a simple travel blog. 
+            {/* <a
               href="https://www.youtube.com/@LetsSailAndiamo"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img className={imgsiz} src={Youtube} alt="youtube" />
-            </a>
-            YouTube Site / travel blog. .
+            </a> */}
+            {/* travel blog.  */}
           </p>
         </div>
         <br></br>
@@ -56,17 +56,17 @@ const AboutPage = () => {
         </div>
         <div className={adminText}>
           As a family of sailors, we understand the unique challenges and
-          rewards of sailing as a family. Our channel is a platform for us to
+          rewards of sailing as a family. Our Blog is a platform for us to
           share our experiences and inspire other families to explore the world
           of sailing together.
         </div>
 
         <div className={adminText}>
-          On our channel, you'll find a wide variety of sailing-related content
+          On our Blog, you'll find a wide variety of sailing-related content
           that is suitable for families of all ages. We feature destination
           guides, sailing tips and tricks, gear reviews and much more, all
           designed to help families plan their next sailing adventure. Our
-          videos showcase some of the most beautiful sailing locations around
+          photos showcase some of the most beautiful sailing locations around
           the world, inspiring families to experience sailing together.
         </div>
         <div className={adminText}>
@@ -78,17 +78,18 @@ const AboutPage = () => {
         </div>
 
         <div className={adminText}>
-          Thank you for visiting
-          <a
+          Thank you for visiting. We hope you enjoy your sailing journey with your loved ones and join
+          our community of sailing families!
+          {/* <a
             href="https://www.youtube.com/@LetsSailAndiamo"
             target="_blank"
             rel="noopener noreferrer"
             alt="https://www.youtube.com/@LetsSailAndiamo"
           >
            Lets Sail Andiamo
-          </a>
-          We hope you enjoy your sailing journey with your loved ones and join
-          our community of sailing families!
+          </a> */}
+          {/* We hope you enjoy your sailing journey with your loved ones and join
+          our community of sailing families! */}
         </div>
         <div></div>
         <div className={alignImages}>

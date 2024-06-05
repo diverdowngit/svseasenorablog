@@ -57,7 +57,7 @@ export default class Banner extends Component {
                 </a>
               </li>
               <li>
-                <a
+                {/* <a
                   className="fab fa-youtube"
                   href={data.github}
                   target="_blank"
@@ -65,7 +65,7 @@ export default class Banner extends Component {
                   aria-label="youtube"
                 >
                   {}
-                </a>
+                </a> */}
               </li>
             </ul>
           </div>
