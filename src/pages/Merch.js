@@ -8,7 +8,7 @@ import {
 const Merch = () => {
   useEffect(() => {
     const spreadShopConfig = {
-      shopName: 'sv-sea-senora',
+      shopName: 'lets-sail-andiamo',
       locale: 'us_US',
       prefix: 'https://lets-sail-andiamo.myspreadshop.com',
       baseId: 'myShop',
